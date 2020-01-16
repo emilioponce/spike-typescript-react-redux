@@ -1,3 +1,5 @@
+import { Message } from "../actions/types";
+
 export interface State {
-  value: string;
+  message: Message;
 }

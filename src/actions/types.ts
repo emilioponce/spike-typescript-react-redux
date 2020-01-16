@@ -1,16 +1,19 @@
-export const PAGE = "PAGE";
-export const PAGE_SET_DATA = `${PAGE}@SET_DATA`;
-export const PAGE_DATA_CLEAR = `${PAGE}@DATA_CLEAR`;
+export enum ActionTypes {
+  PAGE_DATA_CLEAR = "PAGE_DATA_CLEAR",
+  PAGE_SET_DATA = "PAGE_SET_DATA"
+}
 
-export type Value = { value: number };
+export interface Message {
+  value: number;
+}
 
 interface PageSetData {
-  type: typeof PAGE_SET_DATA;
-  payload: Value;
+  type: ActionTypes.PAGE_SET_DATA;
+  payload: Message;
 }
 
 interface PageDataClear {
-  type: typeof PAGE_DATA_CLEAR;
+  type: ActionTypes.PAGE_DATA_CLEAR;
 }
 
 export type Action = PageSetData | PageDataClear;

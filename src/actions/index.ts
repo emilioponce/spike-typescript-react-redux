@@ -1,10 +1,12 @@
-import { Value, Action, PAGE_SET_DATA, PAGE_DATA_CLEAR } from "./types";
+import { Action, ActionTypes, Message } from "./types";
 
-export const pageSetData = ({ value }: Value): Action => ({
-  type: PAGE_SET_DATA,
-  payload: { value }
-});
+export const pageSetData = ({ value }: Message): Action => {
+  return {
+    type: ActionTypes.PAGE_SET_DATA,
+    payload: { value }
+  };
+};
 
 export const pageDataClear = (): Action => ({
-  type: PAGE_DATA_CLEAR
+  type: ActionTypes.PAGE_DATA_CLEAR
 });
