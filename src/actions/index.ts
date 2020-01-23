@@ -1,12 +1,19 @@
 import { Action, ActionTypes, Message } from "./types";
 
-export const pageSetData = ({ value }: Message): Action => {
+export const pageSetAge = ({ value }: Message): Action => {
   return {
-    type: ActionTypes.PAGE_SET_DATA,
+    type: ActionTypes.PAGE_SET_AGE,
     payload: { value }
   };
 };
 
-export const pageDataClear = (): Action => ({
-  type: ActionTypes.PAGE_DATA_CLEAR
+export const pageSetDoubleAge = ({ value }: Message): Action => {
+  return {
+    type: ActionTypes.PAGE_SET_DOUBLE_AGE,
+    payload: { value }
+  };
+};
+
+export const pageClear = (): Action => ({
+  type: ActionTypes.PAGE_CLEAR
 });

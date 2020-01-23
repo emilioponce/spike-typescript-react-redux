@@ -1,19 +1,25 @@
 export enum ActionTypes {
-  PAGE_DATA_CLEAR = "PAGE_DATA_CLEAR",
-  PAGE_SET_DATA = "PAGE_SET_DATA"
+  PAGE_CLEAR = "PAGE_CLEAR",
+  PAGE_SET_AGE = "PAGE_SET_AGE",
+  PAGE_SET_DOUBLE_AGE = "PAGE_SET_DOUBLE_AGE"
 }
 
 export interface Message {
   value: number;
 }
 
-interface PageSetData {
-  type: ActionTypes.PAGE_SET_DATA;
+interface PageSetAge {
+  type: ActionTypes.PAGE_SET_AGE;
   payload: Message;
 }
 
-interface PageDataClear {
-  type: ActionTypes.PAGE_DATA_CLEAR;
+interface PageSetDoubleAge {
+  type: ActionTypes.PAGE_SET_DOUBLE_AGE;
+  payload: Message;
 }
 
-export type Action = PageSetData | PageDataClear;
+interface PageClear {
+  type: ActionTypes.PAGE_CLEAR;
+}
+
+export type Action = PageSetAge | PageSetDoubleAge | PageClear;

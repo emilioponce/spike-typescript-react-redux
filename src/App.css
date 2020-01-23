@@ -2,53 +2,39 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  font-size: 15px;
+  margin: 15px;
+  padding: 5px 10px;
+  color: white;
+  background-color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 100;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-button {
-  font-size: 15px;
+.Age {
+  font-size: 50px;
+  color: rgb(209, 255, 172);
   margin: 10px;
-  padding: 5px 10px;
-  color: white;
-  background-color: #282c34;
 }
 
-.Content {
-  padding: 50;
-  background-color: aliceblue;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.DoubleAge {
+  font-size: 70px;
+  color: rgb(255, 187, 187);
+  margin: 10px;
+}
+
+.Wrapper {
+  background-color: black;
+  width: 500px;
+}
+
+input {
+  font-size: 20px;
 }

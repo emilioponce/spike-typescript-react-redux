@@ -4,7 +4,7 @@ import Content from "./Content";
 
 const Page = () => (
   <>
-    <Filters />
+    <Filters other={"other prop value"} />
     <Content />
   </>
 );

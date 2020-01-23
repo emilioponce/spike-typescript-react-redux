@@ -5,19 +5,19 @@ const initialState: Age = {
   message: { value: 0 }
 };
 
-const age = (state = initialState, action: Action): Age => {
+const doubleAge = (state = initialState, action: Action): Age => {
   switch (action.type) {
-    case ActionTypes.PAGE_SET_AGE:
+    case ActionTypes.PAGE_SET_DOUBLE_AGE: {
+      const doubleAge = action.payload.value * 2;
       return {
-        message: action.payload
+        message: { value: doubleAge }
       };
+    }
     case ActionTypes.PAGE_CLEAR:
       return initialState;
-    // case ActionTypes.PAGE_NOT_USED:
-    //   return state;
     default:
       return state;
   }
 };
 
-export default age;
+export default doubleAge;
