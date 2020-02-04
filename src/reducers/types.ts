@@ -1,8 +1,17 @@
-import rootReducer from "./index";
-import { Message } from "../actions/types";
-
 export interface Age {
-  message: Message;
+  value: number;
 }
 
-export type RootState = ReturnType<typeof rootReducer>;
+export interface ExtraData {
+  description: string;
+  language: string;
+  country: {
+    id: number;
+    name: string;
+    region: {
+      id: number;
+      name: string;
+    };
+  };
+  permissions: Array<string>;
+}

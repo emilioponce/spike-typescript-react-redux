@@ -1,16 +1,25 @@
-import { Action, ActionTypes, Message } from "./types";
+import { Action, ActionTypes } from "./types";
+import { Age, ExtraData } from "../reducers/types";
 
-export const pageSetAge = ({ value }: Message): Action => {
+export const pageSetAge = (age: Age): Action => {
   return {
     type: ActionTypes.PAGE_SET_AGE,
-    payload: { value }
+    // If we put another name to "age" we will have a typeCheck error
+    payload: age
   };
 };
 
-export const pageSetDoubleAge = ({ value }: Message): Action => {
+export const pageSetDoubleAge = (age: Age): Action => {
   return {
     type: ActionTypes.PAGE_SET_DOUBLE_AGE,
-    payload: { value }
+    payload: age
+  };
+};
+
+export const pageSetExtraData = (extraData: ExtraData): Action => {
+  return {
+    type: ActionTypes.PAGE_SET_EXTRA_DATA,
+    payload: extraData
   };
 };
 
