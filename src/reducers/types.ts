@@ -13,5 +13,5 @@ export interface ExtraData {
       name: string;
     };
   };
-  permissions: Array<string>;
+  permissions: ReadonlyArray<string>;
 }

@@ -3,5 +3,5 @@ export interface ExtraDataProjection {
   language: string;
   country: string;
   region: string;
-  permissions: Array<string>;
+  permissions: ReadonlyArray<string>;
 }
