@@ -11,8 +11,16 @@ _Only sync actions were used as the distinction between sync/async actions do no
 - Reducers: shape for reducers and unused switch/case actions (see reducers/types.ts & age.ts)
 - Selectors: shape for incoming state and projections (see selectors/index.ts)
 
-## Further discussions:
+## Further discussions
 
 - Which file/s must store the types? How to correctly organize them?
 - How Typescript impact in the tests?
 - Check the return types in all functions?
+
+## Installation
+
+> Yarn
+
+## Execution
+
+> Yarn start
