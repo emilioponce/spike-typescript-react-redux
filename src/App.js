@@ -8,14 +8,12 @@ import "./App.css";
 
 const { store } = configureStore();
 
-const App = () => {
-  return (
-    <div className="App">
-      <Provider store={store}>
-        <Page />
-      </Provider>
-    </div>
-  );
-};
+const App = () => (
+  <div className="App">
+    <Provider store={store}>
+      <Page />
+    </Provider>
+  </div>
+);
 
 export default App;

@@ -6,6 +6,7 @@ import rootReducer from "../reducers";
 const configureStore = () => {
   const initialState = {};
   const enhancers = [];
+
   const devToolsExtension = window.__REDUX_DEVTOOLS_EXTENSION__;
   if (typeof devToolsExtension === "function") {
     enhancers.push(devToolsExtension());
