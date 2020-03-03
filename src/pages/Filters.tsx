@@ -33,6 +33,7 @@ const Filters = ({
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) =>
     setAge(parseInt(event.target.value, 10));
 
+  // If we put a string in 'value: age' for ex: value: "age", it's gonna fail as it's accepting only numbers
   const handleSetValue = () => {
     pageSetAge({ value: age });
     pageSetDoubleAge({ value: age });

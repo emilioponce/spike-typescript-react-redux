@@ -4,7 +4,7 @@ import { Age, ExtraData } from "../reducers/types";
 export const pageSetAge = (age: Age): Action => {
   return {
     type: ActionTypes.PAGE_SET_AGE,
-    // If we put another name to "age" we will have a typeCheck error
+    // If we put a string instead age, we will have a typeCheck error
     payload: age
   };
 };

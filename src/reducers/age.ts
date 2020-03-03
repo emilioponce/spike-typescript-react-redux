@@ -11,7 +11,7 @@ const age = (state = initialState, action: Action): Age => {
       return initialState;
     // example of case that will not pass the typescript check, as the actionType do not exist
     // case ActionTypes.PAGE_NOT_USED:
-    //   return state;
+    // return state;
     default:
       return state;
   }

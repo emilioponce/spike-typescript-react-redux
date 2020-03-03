@@ -4,7 +4,7 @@ import Content from "./Content";
 
 const Page = () => (
   <>
-    <Filters other={"other prop value"} />
+    <Filters inheritedPropOfTheParentComponent={"prop value"} />
     <Content />
   </>
 );

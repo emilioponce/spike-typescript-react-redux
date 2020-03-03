@@ -7,6 +7,7 @@ export const getAge = (state: Age) => get(state, "age.value", null);
 
 export const getDoubleAge = (state: Age) => get(state, "doubleAge.value", null);
 
+// in the case of projections, we can do a custom type
 export const getExtraData = (state: ExtraData): ExtraDataProjection => {
   const extraData = get(state, "extraData", null);
   return {
