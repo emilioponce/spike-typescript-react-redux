@@ -7,7 +7,7 @@ import extraData from "./extraData";
 const rootReducer = combineReducers({
   age,
   doubleAge,
-  extraData
+  extraData,
 });
 
 export default rootReducer;

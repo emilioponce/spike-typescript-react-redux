@@ -5,7 +5,7 @@ import {
   pageClear,
   pageSetAge,
   pageSetDoubleAge,
-  pageSetExtraData
+  pageSetExtraData,
 } from "../actions";
 
 const extraDataSample = {
@@ -14,9 +14,9 @@ const extraDataSample = {
   country: {
     name: "SPAIN",
     id: 1,
-    region: { id: 1, name: "EUROPE" }
+    region: { id: 1, name: "EUROPE" },
   },
-  permissions: ["permission1", "permission2"]
+  permissions: ["permission1", "permission2"],
 };
 
 // Adding an extra prop will result into a TS error as it's not declared
@@ -26,7 +26,7 @@ const Filters = ({
   pageClear,
   pageSetAge,
   pageSetDoubleAge,
-  pageSetExtraData
+  pageSetExtraData,
 }: Props) => {
   const [age, setAge] = useState(0);
 
@@ -58,7 +58,7 @@ const connector = connect(null, {
   pageClear,
   pageSetAge,
   pageSetDoubleAge,
-  pageSetExtraData
+  pageSetExtraData,
 });
 
 export default connector(Filters);

@@ -15,6 +15,6 @@ export const getExtraData = (state: ExtraData): ExtraDataProjection => {
     language: extraData.language,
     country: extraData.country.name,
     region: extraData.country.region.name,
-    permissions: extraData.permissions
+    permissions: extraData.permissions,
   };
 };
